@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+
+    
+        let arraykosong = []
+        let arrayNama = ["mochamad","fahri","alfaridzi"]
+
+        arraykosong.push("kelas","10","2b")
+        let gabungan = arraykosong.concat(arrayNama)
+        gabungan[0] = ["halo","fahri"]
+        gabungan[1] = ["nama"]
+        gabungan[2] = "saya"
+        gabungan[3] = "mochamad"
+        gabungan[4] = "fachri"
+        gabungan[5] = "alfaridzi"
+        gabungan[6] = "dari"
+        gabungan[7] = "kelas"
+        gabungan[8] = "10"
+        gabungan[9] = "x"
+        gabungan[10] = "2b"
+
+        delete gabungan[9]
+        gabungan[9] = "gak ada"
+        gabungan.push(["fahri","alfaridzi",1,2,3,4])
+        
+        console.table(gabungan)
+        console.info(gabungan[9])
+
+
+        
+
+    </script>
+
+</body>
+</html>

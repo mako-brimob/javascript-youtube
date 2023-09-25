@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>
+        let nilai = prompt("masukkan nilai anda")
+        let nilaiDoni = 90
+
+        if(nilai > 80 || nilai == 80)
+        {
+             nilai = "A"
+            
+        }
+        else if(nilai > 70 || nilai == 70)
+        {
+             nilai = "B"
+        }
+        else if(nilai > 60 || nilai == 60)
+        {
+            nilai = "C"
+        }
+        else if (nilai < 60)
+        {
+             nilai = "F"
+        }
+
+        switch(nilai)
+        {
+            case "A":
+                document.writeln("<p>Selamat kamu lulus dengan sangat baik</p>")
+                break;
+            case "B":
+                document.writeln("<p>Selamat kamu lulus dengan baik</p>")  
+                break;
+            case "C":
+                document.writeln("<p>Maaf kamu harus mengikuti remedial agar bisa lulus</p>")
+                break;
+            case "F": 
+                document.writeln("<p>Maaf silakan coba lagi tahun depan</p>")
+                break;
+            default:
+                document.writeln("<p>anda salah jurusan</p>")
+                break;
+        }
+        
+    </script>
+</body>
+</html>

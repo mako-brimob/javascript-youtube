@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string template</title>
+</head>
+<body>
+    <script>
+        const name = "Mochamad Fachri Alfaridzi"
+        const template  = `Name : ${name} `;
+
+        console.info(template)
+        const nilai = 90
+        
+        
+        const template1 = `Name : ${name}, Tidak lulus karena nilainya ${nilai}`
+        const template2 = `Name : ${name},Lulus dengan nilai ${nilai}`
+
+        if(nilai > 100)
+        {
+            document.writeln(template2)
+        }
+
+        else
+        {
+            document.writeln(template1)
+        }
+        const nama = "doni"
+        const mtk = 100
+        const ipa = 80
+        const bahasa = 60
+        const template3 = `<h1>Nilai rata rata Ujian ${nama} adalah
+         ${(mtk + ipa + bahasa) /3  }</h1>`
+
+         document.writeln(template3)
+
+         const multiline = ` 
+         halo
+         nama saya 
+         fahri
+         salam kenal
+         `
+         document.writeln("<pre>")
+document.writeln(multiline)
+         document.writeln("</pre>")
+    </script>
+</body>
+</html>

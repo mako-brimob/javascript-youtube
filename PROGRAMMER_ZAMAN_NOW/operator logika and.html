@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator logika </title>
+</head>
+<body>
+    <script>
+        let nama = prompt("masukkan nama anda")
+        let nilaitugas = prompt("masukkan nilai anda")
+        let nilaiujian = prompt("masukkan nilai ujian anda")
+        
+
+        if(nilaitugas > 90 || nilaitugas == 90 && nilaiujian > 90 || nilaiujian == 90)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang sangat baik!!</h1>")
+            document.writeln(`Untuk ananda ${nama}.Terus dipertahankan kedisiplinanya`)
+        }
+        else if(nilaitugas > 80 || nilaitugas == 80 && nilaiujian > 80 || nilaiujian == 80)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang sangat baik!!</h1>")
+            document.writeln(`Diharapkan Ananda ${nama} bisa meningkatkan dalam pembelajaran`)
+        }
+        else if(nilaitugas > 70 || nilaitugas == 70 && nilaiujian > 70 || nilaiujian == 70)
+        {
+            document.writeln("<h1>Maaf tetapi anda harus mengikuti remedial</h1>")
+            document.writeln(`Untuk ananda ${nama}.jangan putus asa dan tetap pantang menyerah`)
+        }
+        else if(nilaitugas > 90 || nilaitugas == 90 && nilaiujian > 80 || nilaiujian == 80)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang bagus!!</h1>")
+            document.writeln(`Saran untuk ananda ${nama}. tetap semangat dan tingkatkan ujian nya ya`)
+        }
+        else if(nilaitugas > 90 || nilaitugas == 90 && nilaiujian > 70 || nilaiujian == 70)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang cukup bagus</h1>")
+            document.writeln(`Untuk ananda ${nama}.di mohon untuk meningkatkan nilai nilai ujiannya.tetap semangat ya`)
+        }
+        else if(nilaitugas > 80 || nilaitugas == 80 && nilaiujian > 90 || nilaiujian == 90)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang  bagus</h1>")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa menyelesaikan tugas tepat waktu`)
+        }
+        else if(nilaitugas > 80 || nilaitugas == 80 && nilaiujian > 70 || nilaiujian == 70)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai cukup</h1>")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa menyelesaikan tugas tepat waktu dan meningkatkan 
+            nilai nilai ujian.tetap semangat yaa`)
+        }
+        else if(nilaitugas > 70 || nilaitugas == 70 && nilaiujian > 90 || nilaiujian == 90)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang  cukup</h1>")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa menyelesaikan tugas tugasnya yang belum selesai
+            .stay strong ya`)
+        }
+        else if(nilaitugas > 70 || nilaitugas == 70 && nilaiujian > 80 || nilaiujian == 80)
+        {
+            document.writeln("<h1>Selamat kamu lulus ujian dengan nilai yang  mencukupi</h1>")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa menyelesaikan tugas tugasnya yang belum selesai
+            dan meningkatkan nilai nilai ujian`)
+        }
+        else if(nilaitugas > 70 || nilaitugas == 70 && nilaiujian > 70 || nilaiujian == 70)
+        {
+            document.writeln("<h1>maaf tetapi anda harus mengikuti remedial agar bisa lulus</h1>")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa belajar disiplin dan terus belajar.jangan patah semangat
+            dan sehat selalu`)
+        }
+        else if(nilaitugas < 70 || nilaiujian < 70)
+        {
+            document.writeln("<h1>maaf tapi anda gagal lulus.silahkan coba lagi tahun depan")
+            document.writeln(`Untuk ananda ${nama}.diharapkan bisa sabar dan jangan putus asa.stay stronk`)
+        }
+
+    </script>
+</body>
+</html>

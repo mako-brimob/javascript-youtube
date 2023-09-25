@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objek</title>
+</head>
+<body>
+    <script>
+        const array = {}
+        array["Nama depan"] ="mochamad"
+        array["Nama tengah"] = "fahri"
+        array["Nama belakang"] = "alfaridzi"
+        array["Nama panggilan"] = "ri"
+
+        delete array["Nama panggilan"]
+
+        console.table(array)
+
+        const orang =
+        {
+            nama : "Mochamad Fachri Alfaridzi",
+            panggilan : "fahri",
+            kelas : "X-2b"
+
+            
+        }
+        document.writeln(`<p> Halo nama saya ${orang.nama},saya biasanya dipanggil 
+            ${orang.panggilan} dan sekarang kelas ${orang.kelas}`)
+
+        console.table(orang)
+    </script>
+</body>
+</html>

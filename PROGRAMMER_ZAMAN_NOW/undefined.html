@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>undefined</title>
+</head>
+<body>
+    <script>
+        let p;
+        if(p === undefined)
+        {
+            console.info("UNDEFINED")
+        }
+        else{
+            console.info("not undefined")
+        }
+
+        const names = ["fahri","al","rizki"]
+        if(names[2] === undefined)
+        {
+            alert("kamu undefined")
+        }
+        else 
+        {
+            alert(`halo ${names[2]}`)
+        }
+
+        let c = {
+            nama : "fahri",
+            kelas : "10"
+        }
+        c.nama = undefined
+        if(c.nama === undefined)
+        {
+            console.info("objek undefined")
+        }
+        else{
+            console.info(`hello ${c.nama}`)
+        }
+
+        var v = null
+        if(v === undefined)
+        {
+            console.info("ini adalah undefined")
+        }
+        else
+        {
+            console.info("ini adalah null")
+        }
+        let x = null;
+if (x == null || x == "null" || x == 0) {
+  console.log("x is null, 'null', or 0");
+}
+    </script>
+</body>
+</html>
